@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GodotHub 下载与安装：从网盘转存到手机打开</title>
+  <meta name="description" content="GodotHub 安卓版的获取与安装指引：安装包经夸克网盘转存下载，四步装好打开，另有安装被拦、解析失败、闪退等常见问题的处理办法。">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="/">
+      <img src="/assets/img/favicon.svg" alt="GodotHub 安卓端介绍站标识" width="30" height="30">
+      GodotHub <span class="brand-tag">安卓端</span>
+    </a>
+    <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="/">功能介绍</a>
+      <a href="/#limits">安卓端边界</a>
+      <a href="/#faq-dl">安装问题</a>
+      <a href="/download.html" class="nav-cta">获取安装文件资源</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 首屏下载入口 -->
+  <section class="dl-hero">
+    <div class="wrap">
+      <p class="hero-kicker">DOWNLOAD &amp; INSTALL</p>
+      <h1>拿到安装包，四步装好 GodotHub</h1>
+      <p class="lead">安装包经夸克网盘分享：先转存到自己的网盘，再下载到手机安装。整个过程不需要额外工具，普通网络即可完成。</p>
+      <button class="btn btn-primary" data-link="download">获取安装文件资源</button>
+      <p class="dl-note">APK 格式 · v1.0.8 · 约 25 MB · 中文界面</p>
+    </div>
+  </section>
+
+  <!-- 安装步骤 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center;max-width:none;">
+        <span class="sec-tag">STEPS</span>
+        <h2>安装步骤</h2>
+      </div>
+      <div class="dl-steps">
+        <div class="dl-step">
+          <span class="num">1</span>
+          <div>
+            <h3>转存到自己的网盘</h3>
+            <p>点上面的获取按钮打开网盘分享页，登录夸克账号后，把安装包转存到自己的网盘里。</p>
+          </div>
+        </div>
+        <div class="dl-step">
+          <span class="num">2</span>
+          <div>
+            <h3>下载到手机</h3>
+            <p>在自己的网盘（App 或网页版均可）里找到刚转存的 APK，下载到手机存储。</p>
+          </div>
+        </div>
+        <div class="dl-step">
+          <span class="num">3</span>
+          <div>
+            <h3>点开 APK，允许安装</h3>
+            <p>在通知栏或文件管理里点开下载好的 APK；系统弹出「允许安装未知应用」一类提示时，按提示允许当前来源安装（各品牌手机叫法略有差异）。</p>
+          </div>
+        </div>
+        <div class="dl-step">
+          <span class="num">4</span>
+          <div>
+            <h3>完成安装并打开</h3>
+            <p>等待安装完成，点「打开」进入应用。首次打开数据是空的，先去引擎模块装一个 Godot 4.x 稳定版，再到项目模块新建工程。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见安装问题 -->
+  <section class="section" id="faq-dl">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center;max-width:none;">
+        <span class="sec-tag">TROUBLE</span>
+        <h2>装不上时的三条排查</h2>
+      </div>
+      <div class="faq" style="margin:0 auto;">
+        <details>
+          <summary>提示解析包出错或安装失败</summary>
+          <div class="faq-a">多数是文件没下载完整，重新下载一次再装；下载中途断网、切后台过久都容易出现这种情况。</div>
+        </details>
+        <details>
+          <summary>安装被系统或安全软件拦截</summary>
+          <div class="faq-a">非应用商店渠道安装时出现确认弹窗是常规流程，确认来源可靠后选择继续安装即可；部分机型的开关藏在「设置 → 安全」里。</div>
+        </details>
+        <details>
+          <summary>装完点开就闪退</summary>
+          <div class="faq-a">先检查剩余存储空间——引擎版本与工程文件都存在手机里，比安装包本身占得多；清出空间、重启手机再打开一次，多数能解决。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 装好之后 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="next-panel">
+        <h3>装好之后，先做这两件事</h3>
+        <p>① 进引擎模块，下载一个 Godot 4.x 稳定版到手机（单个数百 MB，预留几 GB 空间）；</p>
+        <p>② 到项目模块新建 2D 或 3D 工程，并确认它使用的引擎版本；插件、教程、社区都在首页入口里。</p>
+        <p style="margin-top:14px;">提醒一句：安卓编辑器目前仍是实验阶段，建议配一套外接键盘鼠标再正式开工，C# 工程需要回桌面端处理。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-in">
+    <p>本页为第三方介绍页，仅作功能说明与获取指引；展示素材来自公开资料，版权归原作者所有。</p>
+    <p>Godot 是开源的跨平台游戏引擎，引擎本体以其发布渠道为准。</p>
+  </div>
+</footer>
+
+<div class="fab-wrap">
+  <button class="fab fab-top" aria-label="返回顶部">↑</button>
+  <button class="fab fab-dl" data-link="download" aria-label="获取安装文件资源">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>
+  </button>
+</div>
+
+<script src="/assets/js/links.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
