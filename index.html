@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GodotHub 安卓端：手机上的 Godot 开发工作台</title>
+  <meta name="description" content="GodotHub 是 Godot 中文社区搭建的安卓工具应用：引擎版本镜像下载、手机工程管理、插件资源与中文教程集中一处。页面整理它的功能构成、安卓端真实使用边界，以及安装文件资源的获取入口。">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="/">
+      <img src="/assets/img/favicon.svg" alt="GodotHub 安卓端介绍站标识" width="30" height="30">
+      GodotHub <span class="brand-tag">安卓端</span>
+    </a>
+    <button class="nav-toggle" aria-label="展开菜单" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="/#modules">功能模块</a>
+      <a href="/#shots">界面实览</a>
+      <a href="/#limits">安卓端边界</a>
+      <a href="/#faq">常见疑问</a>
+      <a href="/download.html" class="nav-cta">获取安装文件资源</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <p class="hero-kicker">GODOT ENGINE · COMMUNITY TOOL</p>
+        <h1>把 Godot 开发工作台<br>装进<em>手机</em></h1>
+        <p class="lead"><b>GodotHub</b> 是 Godot 中文社区搭建的第三方平台应用，不改动引擎本身，而是把<b>引擎版本管理、手机上的工程、插件资源与中文教程</b>收进同一个安卓 App。</p>
+        <p class="hero-meta">安装包 v1.0.8<i>·</i>约 25 MB<i>·</i>中文界面<i>·</i>APK 格式</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-link="download">获取安装文件资源</button>
+          <a class="btn btn-ghost" href="/download.html">查看安装步骤</a>
+        </div>
+      </div>
+      <div class="hero-shots">
+        <figure><img src="/assets/img/ui-home.png" alt="GodotHub 首页：项目与已装引擎统计" width="366" height="651"></figure>
+        <figure><img src="/assets/img/ui-engine.png" alt="引擎管理页：Godot 4 与 Godot 3 各版本下载" width="366" height="651"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 五大模块 -->
+  <section class="section" id="modules">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="sec-tag">MODULES</span>
+        <h2>一个 App，五件事</h2>
+        <p>以 1.0.8 版的界面为准，功能集中在五个模块；版本迭代较快，具体措辞以你手上的版本为准。</p>
+      </div>
+      <div class="cards-5">
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#478cbf" stroke-width="1.6"><path d="M12 2 21 7v10l-9 5-9-5V7l9-5z"/><path d="M12 12 21 7M12 12v10M12 12 3 7"/></svg>
+          <h3>引擎</h3>
+          <p>列出 Godot 3.x 与 4.x 各版本，走国内镜像下载与安装，同一台手机可共存多个版本，项目与引擎随时切换。</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#478cbf" stroke-width="1.6"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+          <h3>项目</h3>
+          <p>管理手机里的 Godot 工程：新建 2D / 3D 工程、导入已有项目，每个工程记录它适配的引擎版本。</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#478cbf" stroke-width="1.6"><path d="M10 4h4v4h4v4h-4v4h-4v-4H6V8h4V4z"/><path d="M4 20h16"/></svg>
+          <h3>资源</h3>
+          <p>插件、工程模板、代码片段与素材按类型和适配版本（3.x / 4.x）标注，附评分与评论，可下载装进工程。</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#478cbf" stroke-width="1.6"><path d="M4 5a2 2 0 0 1 2-2h14v18H6a2 2 0 0 1-2-2V5z"/><path d="M9 3v18"/></svg>
+          <h3>教程</h3>
+          <p>中文图文教程按入门、进阶、实战分类，配代码案例；零基础照着顺序走，就能在手机上跑通第一个工程。</p>
+        </div>
+        <div class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#478cbf" stroke-width="1.6"><path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"/><path d="M9 11h6M9 14h4"/></svg>
+          <h3>社区</h3>
+          <p>浏览与发布开发经验、项目模板，找协作伙伴；社区每年还办一届 GodotHub Festival 开发大赛。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 界面实览 -->
+  <section class="section" id="shots">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="sec-tag">SCREENS</span>
+        <h2>界面长什么样</h2>
+        <p>以下为实际运行画面：首页汇总、引擎版本列表与新建工程入口。</p>
+      </div>
+      <div class="shots-3">
+        <figure>
+          <img src="/assets/img/ui-home.png" alt="首页：项目数、已安装引擎与最新引擎版本" width="366" height="651">
+          <figcaption>首页 · 工程与引擎一览</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/img/ui-engine.png" alt="引擎管理：按 Godot 4 / Godot 3 分列的版本下载" width="366" height="651">
+          <figcaption>引擎管理 · 版本列表</figcaption>
+        </figure>
+        <figure>
+          <img src="/assets/img/ui-project.png" alt="项目列表：新建工程并选择项目引擎" width="366" height="651">
+          <figcaption>项目 · 新建与导入</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 安卓端边界 -->
+  <section class="section" id="limits">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="sec-tag">REALITY CHECK</span>
+        <h2>上手机前，先认清这几条边界</h2>
+        <p>这些约束来自引擎项目方对安卓编辑器的说明，与你从哪个入口安装无关——写清楚，免得预期错位。</p>
+      </div>
+      <ul class="limits">
+        <li><span class="no">EXP-01</span><div><b>安卓编辑器仍属实验阶段。</b><p>引擎项目方在安卓下载页明确标注 experimental，稳定度不如桌面版，重要工程建议桌面与手机各留一份。</p></div></li>
+        <li><span class="no">KEY-02</span><div><b>强烈建议外接键盘鼠标。</b><p>编辑器 UI 尚未针对触屏适配，纯触屏写代码效率很低；配一套外接键鼠才算可用的工作环境。</p></div></li>
+        <li><span class="no">C#-03</span><div><b>C# / .NET 在安卓编辑器上不可用。</b><p>引擎项目方注明安卓编辑器不含 C# 支持，需要 C# 的工程要回桌面端处理。</p></div></li>
+        <li><span class="no">EXP-04</span><div><b>导出安卓包有附加条件。</b><p>走 Gradle 构建导出时，需要另装引擎项目方的 GABE（Godot Android Build Environment）配套应用；普通预设模板导出则用不到。</p></div></li>
+        <li><span class="no">GPU-05</span><div><b>渲染器建议选 Mobile 或 Compatibility。</b><p>Forward+ 在部分手机上表现不佳；安卓设备上一般用 Mobile 或 Compatibility 渲染器新建工程。</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 上手路线 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="sec-tag">ROADMAP</span>
+        <h2>三步跑通第一条手机工程</h2>
+      </div>
+      <div class="steps-line">
+        <div class="step-card">
+          <h3>装好 GodotHub</h3>
+          <p>从网盘转存安装包并安装（约 25 MB），首次打开会停在首页，数据都是空的。</p>
+        </div>
+        <div class="step-card">
+          <h3>下载一个引擎版本</h3>
+          <p>进引擎模块，选一个 4.x 稳定版下载安装；新开项目直接选最新稳定版即可。</p>
+        </div>
+        <div class="step-card">
+          <h3>新建 2D / 3D 工程</h3>
+          <p>到项目模块新建工程、选好引擎版本，配一套外接键鼠，就能开始搭场景写脚本。</p>
+        </div>
+      </div>
+      <p style="margin-top:26px;text-align:center;">
+        <button class="btn btn-primary" data-link="download">获取安装文件资源</button>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="sec-tag">FAQ</span>
+        <h2>动手前常问的几件事</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>GodotHub 就是 Godot 引擎本体吗？</summary>
+          <div class="faq-a">不是。它是由中文社区搭建的平台应用，不修改、不发行引擎；引擎各版本的本体来自引擎项目方（godotengine.org）的发布，App 做的是镜像下载与统一管理。</div>
+        </details>
+        <details>
+          <summary>用它需要额外的网络工具吗？</summary>
+          <div class="faq-a">不需要。引擎与资源分发面向国内网络环境，正常网络直连即可；下载速度随地区与运营商波动，可换时段重试。</div>
+        </details>
+        <details>
+          <summary>Godot 3.x 的老工程还能用吗？</summary>
+          <div class="faq-a">可以。App 同时覆盖 3.x 与 4.x 的引擎版本，老工程导入后按它适配的版本切换引擎即可。</div>
+        </details>
+        <details>
+          <summary>手机要留多少空间？</summary>
+          <div class="faq-a">安装包本身约 25 MB；真正占空间的是后续下载的引擎版本（单个数百 MB）与工程文件，开工前留出几个 GB 余量比较稳妥。</div>
+        </details>
+        <details>
+          <summary>资源中心的插件都能随便用吗？</summary>
+          <div class="faq-a">以资源详情页标注的授权协议为准：标注可商用的可直接用，标注需授权的先联系作者；重要工程先备份，再试新插件。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap foot-in">
+    <p>本页为第三方介绍页，仅作功能说明与获取指引；展示素材来自公开资料，版权归原作者所有。</p>
+    <p>Godot 是开源的跨平台游戏引擎，引擎本体以其发布渠道为准。</p>
+  </div>
+</footer>
+
+<div class="fab-wrap">
+  <button class="fab fab-top" aria-label="返回顶部">↑</button>
+  <button class="fab fab-dl" data-link="download" aria-label="获取安装文件资源">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>
+  </button>
+</div>
+
+<script src="/assets/js/links.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
